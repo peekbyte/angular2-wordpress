@@ -1,0 +1,22 @@
+<div class="posts">
+    <h1 class="content-subhead">Recent Posts</h1>
+    <section class="post" *ngFor="let post of posts">
+        <header class="post-header">
+            <img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
+
+           <a  [routerLink]="['/home/post', post.id]"> <h2 class="post-title" >{{post.title.rendered}}</h2>
+           </a>
+            <p class="post-meta">
+                [{{post.date}}] under
+                <a class="post-category post-category-js" *ngFor="let tag of tags | filterPostTags : post.tags" href="#">
+                    {{tag.name}}</a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <p [innerHTML]="post.excerpt.rendered">
+            </p>
+        </div>
+    </section>
+      <button class="pure-button" (click)="loadPosts()">Load more ...</button>
+</div>
