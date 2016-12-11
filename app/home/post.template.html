@@ -3,7 +3,6 @@
     
     <section class="post">
 				<header class="post-header">
-					<img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
 
 					<h2 class="post-title">{{post?.title?.rendered}}</h2>
 
@@ -15,7 +14,7 @@
 				</header>
 
 				<div class="post-description">
-					<p [innerHTML]="post?.excerpt?.rendered">
+					<p [innerHTML]="post?.content?.rendered">
 					</p>
 				</div>
 			</section>
