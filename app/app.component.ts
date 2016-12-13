@@ -1,7 +1,7 @@
 import { Component, ViewContainerRef } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
+    selector: 'wp-app',
     template: `
     <router-outlet></router-outlet>`
 })
@@ -10,6 +10,5 @@ export class AppComponent {
     public constructor(viewContainerRef:ViewContainerRef) {
         this.viewContainerRef = viewContainerRef;
     }
-
     Title = 'Home';
  }

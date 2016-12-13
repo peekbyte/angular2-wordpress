@@ -1,34 +1,42 @@
 import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {PostsComponent} from './home/posts.component';
-import {PostComponent} from './home/post.component';
-import {IndexComponent} from './home/index.component';
+import { HomeComponent } from './home/home.component';
+import { PostsComponent } from './post/posts.component';
+import { PostComponent } from './post/post.component';
+import { IndexComponent } from './shared/index.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
+    // {
+    //     path: '',
+    //     redirectTo: '/home',
+    //     pathMatch: 'full'
+    // },
     {
         path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-    },
-    {
-        path: 'home',
-        component: HomeComponent
+        component: IndexComponent
         ,
         children: [
             {
                 path: '',
-                component: IndexComponent,
+                component: HomeComponent,
             }
             ,
             {
                 path: 'posts',
                 component: PostsComponent,
-            }
-            ,
+            },
             {
                 path: 'post/:id', component: PostComponent
+            },
+            {
+                path: 'about', 
+                component: AboutComponent
+            },
+            {
+                path: 'contact', 
+                component: ContactComponent
             }
-
         ]
     }
 ];

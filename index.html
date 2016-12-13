@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <base href="/">
   <title></title>
@@ -12,27 +13,28 @@
   <!--[if lte IE 8]>
         <link rel="stylesheet" href="node_modules/purecss/build/grids-responsive-old-ie-min.css">
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="node_modules/purecss/build/grids-responsive-min.css">
-    <!--<![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="node_modules/purecss/build/grids-responsive-min.css">
+  <!--<![endif]-->
 
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    
-    <script src="systemjs.config.js"></script>
-    <script>
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
-  </head>
-  <body >
+</head>
 
-<div id="layout" class="pure-g">
-  <my-app>Loading...</my-app>
-</div>
-    </body>
+<body>
+  <div id="layout" class="pure-g">
+    <wp-app>Loading...</wp-app>
+  </div>
+</body>
+
 </html>

@@ -1,19 +1,19 @@
 import { Component, AfterViewInit, AfterViewChecked, Input, ElementRef, ChangeDetectorRef } from '@angular/core';
-import {HomeService} from './home.service'
+import {Service} from '../shared/service'
 import {Observable} from 'rxjs/Rx';
 
 @Component({
-    selector: 'my-posts',
-    templateUrl: 'app/home/posts.template.html',
-    providers: [HomeService]
+    selector: 'wp-posts',
+    templateUrl: 'app/post/posts.template.html',
+    providers: [Service]
 })
 
 export class PostsComponent {
     posts: any[] = [];
     tags: any[] = [];
     pageNumber = 0;
-    constructor(public homeServie: HomeService, private elRef: ElementRef, private cdRef: ChangeDetectorRef) {
-        homeServie.getTags().then((data) => {
+    constructor(public servie: Service, private elRef: ElementRef, private cdRef: ChangeDetectorRef) {
+        servie.getTags().then((data) => {
             this.tags = data;
         });
         this.loadPosts();
@@ -28,7 +28,6 @@ export class PostsComponent {
 
     updateHrefs() {
         this.elRef.nativeElement.querySelectorAll('p > a.more-link').forEach((e: any) => {
-            debugger;
             e.href = '';
             //[routerLink]="['/home/post', post.id]"
             e.routerLink = '/home/post/10';
@@ -41,7 +40,7 @@ export class PostsComponent {
     loadPosts() {
         this.pageNumber++;
         let self = this;
-        this.homeServie.getPosts(this.pageNumber, 3).then((data: any[]) => {
+        this.servie.getPosts(this.pageNumber, 3).then((data: any[]) => {
             if (data.length == 0)
                 return;
 
