@@ -4,7 +4,7 @@ import {Component, Directive, ViewChild} from '@angular/core';
     selector: 'wp-header',
     viewProviders:[],
     providers: [],
-    templateUrl: 'app/shared/header.template.html'
+    templateUrl: './header.template.html'
 })
 
 export class HeaderComponent {

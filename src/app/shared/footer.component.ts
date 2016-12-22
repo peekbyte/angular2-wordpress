@@ -4,7 +4,7 @@ import {Component, Directive, ViewChild} from '@angular/core';
     selector: 'wp-footer',
     viewProviders:[],
     providers: [],
-    templateUrl: 'app/shared/footer.template.html'
+    templateUrl: './footer.template.html'
 })
 
 export class FooterComponent {

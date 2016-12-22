@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Service } from '../shared/service';
 
 @Component({
-    selector: '[wp-home]',
+    selector: 'wp-contact',
     providers: [],
     viewProviders: [],
-    templateUrl: 'app/home/home.template.html'
+    templateUrl: './contact.template.html'
 })
 
-export class HomeComponent {
+export class ContactComponent {
     constructor(private service: Service) {
     }
 }

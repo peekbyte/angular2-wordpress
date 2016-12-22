@@ -4,7 +4,7 @@ import {Observable} from 'rxjs/Rx';
 
 @Component({
     selector: 'wp-posts',
-    templateUrl: 'app/post/posts.template.html',
+    templateUrl: './posts.template.html',
     providers: [Service]
 })
 

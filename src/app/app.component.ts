@@ -1,5 +1,7 @@
 import { Component, ViewContainerRef } from '@angular/core';
 
+
+
 @Component({
     selector: 'wp-app',
     template: `

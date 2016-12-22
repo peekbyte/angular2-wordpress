@@ -4,7 +4,7 @@ import {Observable} from 'rxjs/Rx';
 import {ActivatedRoute} from '@angular/router'
 @Component({
     selector: 'wp-post',
-    templateUrl: 'app/post/post.template.html',
+    templateUrl: './post.template.html',
     providers: []
 })
 

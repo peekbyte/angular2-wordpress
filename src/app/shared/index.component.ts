@@ -7,7 +7,7 @@ import { Service } from '../shared/service';
     selector: 'wp-index',
     providers: [],
     viewProviders: [],
-    templateUrl: 'app/shared/index.template.html'
+    templateUrl: './index.template.html'
 })
 
 export class IndexComponent {

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { routing } from './app.routing'
 import { AppComponent }  from './app.component';
@@ -18,7 +17,7 @@ import { FilterPostTags } from './post/filter-post-tags.pipe';
 import { Service } from './shared/service';
 
 @NgModule({
-  imports: [BrowserModule, ReactiveFormsModule, routing, FormsModule, HttpModule, Ng2BootstrapModule],
+  imports: [BrowserModule, ReactiveFormsModule, routing, FormsModule, HttpModule],
   providers: [Service],
   declarations: [AppComponent,
     HomeComponent,
