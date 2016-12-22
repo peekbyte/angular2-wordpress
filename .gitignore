@@ -1,6 +1,7 @@
 .idea
 typings/**
 node_modules
+dist
 app/**/**.js
 app/**/**.map
 assets/plugins
