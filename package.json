@@ -1,7 +1,7 @@
 {
-  "name": "angular2-webpack",
+  "name": "angular2-wordpress",
   "version": "1.0.0",
-  "description": "A webpack starter for Angular",
+  "description": "angular2 wordpress",
   "scripts": {
     "start": "webpack-dev-server  --progress --colors --inline --watch --port 8080",
     "test": "karma start",
