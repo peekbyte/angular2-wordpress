@@ -4,7 +4,7 @@ import { FooterComponent }  from './footer.component';
 import { Service } from '../shared/service';
 
 @Component({
-    selector: 'wp-index',
+    selector: '[wp-index]',
     providers: [],
     viewProviders: [],
     templateUrl: './index.template.html'

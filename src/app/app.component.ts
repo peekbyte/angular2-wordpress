@@ -3,7 +3,7 @@ import { Component, ViewContainerRef } from '@angular/core';
 
 
 @Component({
-    selector: 'wp-app',
+    selector: '[wp-app]',
     template: `
     <router-outlet></router-outlet>`
 })

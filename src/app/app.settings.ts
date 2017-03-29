@@ -1,5 +1,5 @@
 export class AppSettings{
-    public static APP_ENDPOINT(){return 'http://localhost/wp/wp/'};
+    public static APP_ENDPOINT(){return 'http://api.peekbyte.com/'};
     public static AUTH_TOKEN(){return 'AUTH_TOKEN'};
     public static USER_FULLNAME(){return 'USER_FULLNAME'};
     // DEV, STAGING, PRODUCTION

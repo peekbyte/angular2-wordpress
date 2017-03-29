@@ -15,6 +15,7 @@ const appRoutes: Routes = [
     {
         path: '',
         component: IndexComponent
+        
         ,
         children: [
             {
