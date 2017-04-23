@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '7.5.0'
+before_install:
+- npm install -g typescript@2.2.1
+script:
+- npm run
+before_script:
+- npm install -g angular-cli
+- npm install
+- ng build
