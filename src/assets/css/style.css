@@ -11,7 +11,9 @@ a {
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    color: #13B4BE !important;
 }
 
 h3 {
@@ -35,7 +37,8 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    /*background: rgb(61, 79, 93);*/
+    background:#315D76;
     color: #fff;
 }
 
@@ -164,8 +167,12 @@ h3 {
     }
 
     .header {
-        margin: 80% 2em 0;
-        text-align: right;
+        margin: 30% 2em 0;
+        text-align: center;
+    }
+
+    .header img{
+        margin-bottom: 80px;
     }
 
     .sidebar {
@@ -173,4 +180,15 @@ h3 {
         top: 0;
         bottom: 0;
     }
+}
+.about h1{
+    color:#333333;
+}
+.about p{
+    color:#666666;
+}
+
+.pure-menu a{
+color:#315D76;
+
 }
